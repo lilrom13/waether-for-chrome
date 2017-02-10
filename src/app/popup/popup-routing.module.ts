@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PopupComponent } from "./popup.component";
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: PopupComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
