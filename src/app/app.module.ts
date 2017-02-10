@@ -5,10 +5,13 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { WeatherService } from "./_services/weather.service";
+import { PopupComponent } from "./popup/popup.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
@@ -16,7 +19,9 @@ import { AppComponent } from './app.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    WeatherService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
