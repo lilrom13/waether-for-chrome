@@ -7,11 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherService } from "./_services/weather.service";
 import { PopupComponent } from "./popup/popup.component";
+import {AlertComponent} from "./_directives/alert.component";
+import {AlertService} from "./_services/alert.service";
 
 @NgModule({
   declarations: [
     AppComponent,
-    PopupComponent
+    PopupComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import { PopupComponent } from "./popup/popup.component";
     AppRoutingModule
   ],
   providers: [
-    WeatherService
+    WeatherService,
+    AlertService
   ],
   bootstrap: [AppComponent]
 })
