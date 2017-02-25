@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Weather for Chrome",
+  "description": "Weather for Chrome is a simple Google chrome plugin using angular CLI",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "assets/Soleil.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "geolocation"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
